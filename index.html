@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>الساعة الذكية – الابتدائية الثانية</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Header -->
+<header class="app-header">
+  <div class="header-top">
+    <div class="watch-icon">⌚</div>
+    <div class="header-titles">
+      <div class="school-name">مدرسة الابتدائية الثانية بالقاعدة الجوية</div>
+      <div class="app-title">نظام تقارير الساعة الذكية</div>
+    </div>
+  </div>
+  <div class="hijri-date" id="hijriDate">…</div>
+</header>
+
+<!-- LIST VIEW -->
+<div id="listView">
+  <div class="list-header">اختاري اسم المعلمة لعرض تقريرها</div>
+  <div class="teacher-grid" id="teacherGrid"></div>
+</div>
+
+<!-- REPORT VIEW -->
+<div id="reportView">
+  <div class="back-bar" onclick="goBack()">
+    <span class="back-icon">→</span>
+    <span class="back-label">العودة لقائمة المعلمات</span>
+  </div>
+  <div class="report-scroll" id="reportScroll"></div>
+</div>
+
+<!-- ADD/EDIT OVERLAY (admin only) -->
+<div id="editOverlay" class="edit-overlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
